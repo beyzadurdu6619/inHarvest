@@ -1,0 +1,68 @@
+﻿
+
+@using EntityLayer.Concreate
+@model Team
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<form method="post">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Yeni Takım Arkadaşı Girişi</h4>
+
+                <div class="form-group">
+                    <label for="PersonName">PersonName</label>
+                    <span asp-validation-for="PersonName" class="text-danger"></span>
+                    <input type="text" class="form-control" id="PersonName" placeholder="Person Name" asp-for="PersonName">
+                </div>
+
+                <div class="form-group">
+                    <label for="Title">Görevi</label>
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                    <input type="text" class="form-control" id="Title" placeholder="Görevi" asp-for="Title">
+                </div>
+
+                <div class="form-group">
+                    <label for="ImageUrl">Resim</label>
+                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                    <input type="text" class="form-control" id="ImageUrl" placeholder="Resim URL" asp-for="ImageUrl">
+                </div>
+
+                <div class="form-group">
+                    <label for="FacebookUrl">Facebook</label>
+                    <span asp-validation-for="FacebookUrl" class="text-danger"></span>
+                    <input type="text" class="form-control" id="FacebookUrl" placeholder="Facebook URL" asp-for="FacebookUrl">
+                </div>
+
+                <div class="form-group">
+                    <label for="InstagramUrl">Instagram</label>
+                    <span asp-validation-for="InstagramUrl" class="text-danger"></span>
+                    <input type="text" class="form-control" id="InstagramUrl" placeholder="Instagram URL" asp-for="InstagramUrl">
+                </div>
+
+                <div class="form-group">
+                    <label for="TwitterUrl">Twitter</label>
+                    <span asp-validation-for="TwitterUrl" class="text-danger"></span>
+                    <input type="text" class="form-control" id="TwitterUrl" placeholder="Twitter URL" asp-for="TwitterUrl">
+                </div>
+
+                <div class="form-group">
+                    <label for="WebsiteUrl">Website</label>
+                    <span asp-validation-for="WebsiteUrl" class="text-danger"></span>
+                    <input type="text" class="form-control" id="WebsiteUrl" placeholder="Website URL" asp-for="WebsiteUrl">
+                </div>
+
+                <button type="submit" class="btn btn-primary me-2">Kaydet</button>
+                <button type="button" class="btn btn-light">Cancel</button>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+

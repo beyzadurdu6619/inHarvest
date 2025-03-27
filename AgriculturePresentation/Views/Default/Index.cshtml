@@ -1,0 +1,179 @@
+﻿@{
+	ViewData["Title"] = "Index";
+	Layout =null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+@await Component.InvokeAsync("_HeadPartial")
+<body>
+
+	<!-- header -->
+	<div class="header">
+		<div class="container">
+			@await Component.InvokeAsync("_TopAddressPartial")
+			
+			@await Component.InvokeAsync("_SocialMediaPartial")
+			
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<!-- //header -->
+	<!--Slider-->
+	<div class="slider">
+		<div class="header-bottom">
+			<div class="container">
+				@await Component.InvokeAsync("_NavbarPartial")
+			
+				
+			</div>
+		</div>
+		<div class="callbacks_container">
+			<ul class="rslides" id="slider3">
+				<li>
+
+					<div class="slider-info">
+						<h3>Sürdürülebilir Tarım ve Çevre Dostu Çözümler</h3>
+						<p>
+							Günümüz dünyasında tarımsal üretim artarken çevresel etkiler de göz ardı edilemez hale gelmiştir. Sürdürülebilir tarım, çevreye zarar vermeden, doğal kaynakları koruyarak ve gelecek nesillere verimli topraklar bırakmayı amaçlayan bir yaklaşımdır.
+
+						</p>
+						<div class="readmore-w3"><a class="readmore" href="#" data-toggle="modal" data-target="#myModal1">Read More</a></div>
+					</div>
+				</li>
+				<li>
+					<div class="slider-info">
+						<h3>Akıllı Tarım Teknolojileri ile Verimliliği Artırma</h3>
+						<p>Dijitalleşen dünya ile birlikte tarım sektörü de teknolojiyle entegre hale gelmiştir. Akıllı tarım teknolojileri, verimliliği artırmak ve kaynak israfını önlemek için önemli fırsatlar sunmaktadır.</p>
+						<div class="readmore-w3"><a class="readmore" href="#" data-toggle="modal" data-target="#myModal1">Read More</a></div>
+					</div>
+				</li>
+				<li>
+					<div class="slider-info">
+						<h3>Küçük Çiftliklerin Güçlendirilmesi ve Yerel Üretimin Önemi</h3>
+						<p>Büyük ölçekli tarım işletmeleri giderek yaygınlaşırken, küçük çiftlikler sürdürülebilir gıda üretiminde kritik bir rol oynamaktadır. Yerel üretimin teşvik edilmesi, hem ekonomik hem de çevresel açıdan birçok fayda sağlamaktadır.</p>
+						<div class="readmore-w3"><a class="readmore" href="#" data-toggle="modal" data-target="#myModal1">Read More</a></div>
+					</div>
+				</li>
+				<li>
+					<div class="slider-info">
+						<h3>İklim Değişikliği ile Mücadelede Tarımın Rolü</h3>
+						<p>İklim değişikliği, tarım sektörünü doğrudan etkileyen küresel bir sorundur. Aşırı sıcaklıklar, kuraklık, sel ve doğal afetler, tarımsal üretimi zorlaştırmaktadır. Bu nedenle, tarımın iklim değişikliğine uyum sağlaması hayati önem taşımaktadır.</p>
+						<div class="readmore-w3"><a class="readmore" href="#" data-toggle="modal" data-target="#myModal1">Read More</a></div>
+					</div>
+				</li>
+
+			</ul>
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+
+	<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+		<!-- Modal1 -->
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>Başak</h4>
+					<img src="~/web/images/banner1.jpg" alt=" " class="img-responsive">
+					<h5>ENVIRONMENT & SUSTAINABILITY</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>Başak</h4>
+					<img src="~/web/images/b1.jpg" alt=" " class="img-responsive">
+					<h5>FURTHER DEVELOPMENT IN AGRICULTURE GROWTH</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal2 -->
+	<!-- Modal3 -->
+	<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>Başak</h4>
+					<img src="~/web/images/b2.jpg" alt=" " class="img-responsive">
+					<h5>KEEPING ON ADVANCING THE AGRICULTURE INDUSTRY</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal3 -->
+	<!-- Modal4 -->
+	<div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
+		<div class="modal-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4>Başak</h4>
+					<img src="~/web/images/b3.jpg" alt=" " class="img-responsive">
+					<h5>OUR FIRST STEPS ON THE MARKET AMONG AGRICULTURAL COMPANIES</h5>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	@await Component.InvokeAsync("_AboutPartial")
+	
+	@await Component.InvokeAsync("_ServicePartial")
+
+	@await Component.InvokeAsync("_TeamPartial")
+
+	@await Component.InvokeAsync("_AnnouncementPartial")
+
+	
+	<!-- //Modal4 -->
+	<!--/gallery-->
+	<div class="contact-agile" id="contact">
+		<div class="container">
+			<h3 class="tittle">İletişim</h3>
+			<p class="heading-btm-w3ls">Bizimle iletişime geçin.</p>
+			@await Component.InvokeAsync("_BottomAddressPartial")
+			@await Html.PartialAsync("/Views/Default/SendMessage.cshtml")
+		</div>
+	</div>
+	
+	<div class="contact-agile" id="contact">
+		<div class="container">
+		
+
+			
+
+		</div>
+	</div>
+	@await Component.InvokeAsync("_MapPartial")
+
+	@await Component.InvokeAsync("_BottomSocialMediaPartial")
+	
+	@await Component.InvokeAsync("_FooterPartial")
+
+	@await Component.InvokeAsync("_ScriptPartial")
+	
+
+</body>
+</html>

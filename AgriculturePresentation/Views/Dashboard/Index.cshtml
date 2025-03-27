@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+            @await Component.InvokeAsync("_DasboardNavbarPartial")
+           
+            @await Component.InvokeAsync("_DasboardOverviewPartial")
+   
+            @await Component.InvokeAsync("_DasboardChartPartial")
+      
+            @await Component.InvokeAsync("_DasboardTablePartial")
+      
+  
+
+   
+
+
+

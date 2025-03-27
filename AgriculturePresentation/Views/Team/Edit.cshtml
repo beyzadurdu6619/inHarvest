@@ -1,0 +1,57 @@
+﻿@using EntityLayer.Concreate
+@model Team
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<form method="post">
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Takım Arkadaşı Güncelleme</h4>
+                @Html.HiddenFor(x => x.TeamID)
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label for="exampleInputName1">PersonName</label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Title" asp-for="PersonName">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Görevi</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Image" asp-for="Title">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Resim</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Image" asp-for="ImageUrl">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Facebook</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Image" asp-for="FacebookUrl">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Instagram</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Image" asp-for="InstagramUrl">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Twitter</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Image" asp-for="TwitterUrl">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">WebsiteUrl</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Image" asp-for="WebsiteUrl">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Resim</label>
+                        <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Image" asp-for="ImageUrl">
+                    </div>
+                    <button type="submit" class="btn btn-primary me-2">Kaydet</button>
+
+                    <button class="btn btn-light">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</form>
+

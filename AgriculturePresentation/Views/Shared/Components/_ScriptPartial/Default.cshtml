@@ -1,0 +1,80 @@
+﻿<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/web/js/jquery-2.1.4.min.js"></script> <!-- Eski jQuery sürümü gerekiyorsa ekleyebilirsin -->
+<script src="~/web//move-top.js"></script>
+<script src="~/web/js/easing.js"></script>
+
+<!-- Gallery -->
+<script src="~/web/js/jquery.picEyes.js"></script>
+<script>
+	$(function(){
+		$('.demo li').picEyes();
+	});
+</script>
+
+<!-- Smooth Scroll -->
+<script>
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+
+<!-- Lightbox -->
+<script src="~/web/js/jquery.chocolat.js"></script>
+<script>
+	$(function() {
+		$('.gallery a').Chocolat();
+	});
+</script>
+
+<!-- Responsive Slides -->
+<script src="~/web/js/responsiveslides.min.js"></script>
+<script>
+	$(function () {
+	  $("#slider3").responsiveSlides({
+		auto: true,
+		pager:true,
+		nav:true,
+		speed: 500,
+		namespace: "callbacks",
+	  });
+	});
+</script>
+
+<!-- Search Bar -->
+<script src="~/web/js/main.js"></script>
+
+<!-- Tabs -->
+<script src="~/web/js/easy-responsive-tabs.js"></script>
+<script>
+	$(document).ready(function () {
+		$('#horizontalTab').easyResponsiveTabs({
+			type: 'default',
+			width: 'auto',
+			fit: true,
+			closed: 'accordion',
+			activate: function(event) {
+				var $tab = $(this);
+				var $info = $('#tabInfo');
+				var $name = $('span', $info);
+				$name.text($tab.text());
+				$info.show();
+			}
+		});
+	});
+</script>
+
+<!-- Smooth Scroll to Top -->
+<script>
+	$(document).ready(function() {
+		$().UItoTop({ easingType: 'easeOutQuart' });
+	});
+</script>
+
+<!-- Back to Top -->
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+<!-- Bootstrap -->
+<script src="~/web/js/bootstrap-3.1.1.min.js"></script>

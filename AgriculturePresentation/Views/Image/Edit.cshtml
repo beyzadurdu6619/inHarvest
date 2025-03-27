@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+@using EntityLayer.Concreate
+@model Image
+
+<form method="post">
+    @Html.HiddenFor(x => x.ImageID)
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Resim Güncelleme</h4>
+
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Başlık</label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Title" asp-for="Title">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleTextarea1">Resim Yolu</label>
+                        <textarea class="form-control" id="exampleTextarea1" rows="4" asp-for="ImageUrl"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea1">Açıklama</label>
+                        <textarea class="form-control" id="exampleTextarea1" rows="4" asp-for="Description"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                    <button class="btn btn-outline-info">Kaydet</button>
+                    <button class="btn btn-light">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+

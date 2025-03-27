@@ -1,0 +1,45 @@
+﻿
+@model UserEditViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<form method="post">
+
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Profil Düzenleme Sayfası</h4>
+
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Mail Adresi:</label>
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Title" asp-for="Mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Telefon Numarası:</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Title" asp-for="Phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Şifre:</label>
+                        <input type="password" class="form-control" id="exampleInputName3" placeholder="Title" asp-for="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName1">Şifre Tekrar:</label>
+                        <input type="password" class="form-control" id="exampleInputName4" placeholder="Title" asp-for="ConfirmPassword">
+                    </div>
+       
+ 
+                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                    <button class="btn btn-outline-info">Kaydet</button>
+                    <button class="btn btn-light">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+
+
