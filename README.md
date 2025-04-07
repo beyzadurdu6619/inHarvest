@@ -1,11 +1,11 @@
-![news](https://github.com/user-attachments/assets/fe23e361-2bf1-48db-b28f-8236a77eb6fd)# 🚀 Proje Tanıtımı
+# 🚀 Proje Tanıtımı
 
 Bu proje, **ASP.NET Core** teknolojisi kullanılarak geliştirilmiş ve **N Katmanlı Mimari (N-Tier Architecture)** yapısıyla organize edilmiştir. Uygulama içerisinde kullanıcı girişi, ürün yönetimi, müşteri yönetimi, kategori ve meslek işlemleri, şifre güncelleme ve yardım içerikleri gibi birçok modül yer almaktadır.
 
 ---
 
 
-https://github.com/user-attachments/assets/fb158270-fbbb-4740-9878-5228c8f58813
+
 
 
 ![giriş](https://github.com/user-attachments/assets/88567e89-0819-4423-9571-0d5ff910f0de)
@@ -94,7 +94,11 @@ https://github.com/user-attachments/assets/fb158270-fbbb-4740-9878-5228c8f58813
 ---
 
 
-Uploading Kayıt 2025-03-21 163014.mp4…
+
+
+https://github.com/user-attachments/assets/483f39fc-2f5d-4ba9-a4e8-67c91e3ee44f
+
+
 
 
 ## 📁 Proje Yapısı
